@@ -1,37 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>AR, VR & Holograms</title>
+<meta charset="UTF-8">
+<title>AR, VR & Holograms</title>
 
-    <!-- Quiz CSS -->
-    <link rel="stylesheet" href="quiz.css">
+<link rel="stylesheet" href="./quiz.css">
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: #1c1c1c;
-            color: white;
-            padding: 30px;
-        }
-
-        h1 {
-            text-align: center;
-        }
-
-        .card {
-            background: rgba(255,255,255,0.12);
-            padding: 25px;
-            margin: 25px 0;
-            border-radius: 15px;
-        }
-
-        a {
-            color: #00ffcc;
-            text-decoration: none;
-            font-weight: bold;
-        }
-    </style>
+<style>
+body {
+    font-family: Arial;
+    background: #1c1c1c;
+    color: white;
+    padding: 30px;
+}
+.card {
+    background: rgba(255,255,255,0.12);
+    padding: 25px;
+    margin: 25px 0;
+    border-radius: 15px;
+}
+a { color: #00ffcc; }
+</style>
 </head>
 
 <body>
@@ -39,68 +28,35 @@
 <h1>AR, VR & Holograms</h1>
 
 <div class="card">
-    <h2>Augmented Reality (AR)</h2>
-    <p>
-        Augmented Reality overlays digital content such as images, videos,
-        or text onto the real world. It enhances reality without replacing it.
-    </p>
+<h2>Augmented Reality</h2>
+<p>Overlays digital content onto the real world.</p>
 </div>
 
 <div class="card">
-    <h2>Virtual Reality (VR)</h2>
-    <p>
-        Virtual Reality creates a fully immersive digital environment using
-        VR headsets. It is used in gaming, training, and simulations.
-    </p>
+<h2>Virtual Reality</h2>
+<p>Creates a fully immersive digital environment.</p>
 </div>
 
 <div class="card">
-    <h2>Holograms</h2>
-    <p>
-        Holograms are three-dimensional images created using light technology.
-        They appear to float and can be viewed from different angles.
-    </p>
+<h2>Holograms</h2>
+<p>3D images created using light.</p>
 </div>
 
 <button id="startQuiz">Start Quiz</button>
 <div id="quiz"></div>
 
-<p><a href="./index.html">⬅ Back to Main Menu</a></p>
+<p><a href="./index.html">⬅ Back</a></p>
 
-<script src="quiz.js"></script>
-
+<script src="./quiz.js"></script>
 <script>
 const quizData = [
-  {
-    q: "What does AR stand for?",
-    options: ["Artificial Reality","Augmented Reality","Advanced Reality","Actual Reality"],
-    answer: 1
-  },
-  {
-    q: "Which device is used for VR?",
-    options: ["Mobile phone","VR Headset","TV","Calculator"],
-    answer: 1
-  },
-  {
-    q: "Which technology creates a virtual world?",
-    options: ["AR","VR","Hologram","AI"],
-    answer: 1
-  },
-  {
-    q: "Holograms are?",
-    options: ["2D images","3D images","Text files","Videos"],
-    answer: 1
-  },
-  {
-    q: "AR enhances which world?",
-    options: ["Virtual","Real","Dream","Game"],
-    answer: 1
-  }
+ { q:"AR stands for?", options:["Artificial","Augmented","Advanced","Actual"], answer:1 },
+ { q:"VR uses?", options:["TV","Headset","Phone","Radio"], answer:1 },
+ { q:"Virtual world?", options:["AR","VR","AI","IoT"], answer:1 },
+ { q:"Holograms are?", options:["2D","3D","Text","Sound"], answer:1 },
+ { q:"AR enhances?", options:["Virtual","Real","Dream","Game"], answer:1 }
 ];
-
-document.getElementById("startQuiz").onclick = function () {
-    loadQuiz(quizData);
-};
+document.getElementById("startQuiz").onclick = () => loadQuiz(quizData);
 </script>
 
 </body>
