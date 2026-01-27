@@ -1,0 +1,42 @@
+#startQuiz{
+    background:#00ff66;
+    color:black;
+    border:none;
+    padding:12px 22px;
+    font-size:18px;
+    border-radius:10px;
+    cursor:pointer;
+    margin:25px 0;
+}
+
+.question{
+    margin-bottom:25px;
+}
+
+.option{
+    display:block;
+    width:100%;
+    margin:10px 0;
+    padding:12px;
+    background:#333;
+    color:white;
+    border:2px solid transparent;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.option.correct{
+    background:#00cc66;
+}
+
+.option.wrong{
+    background:#cc3333;
+}
+
+.option.grey{
+    background:#666;
+}
+
+.option.selected{
+    border:3px solid red;
+}
