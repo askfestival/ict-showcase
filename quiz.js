@@ -15,31 +15,18 @@ function loadQuiz(questions) {
             btn.className = "option";
             btn.innerText = opt;
 
-            if (idx === q.answer) {
-                btn.dataset.correct = "true";
-            }
+            if (idx === q.answer) btn.dataset.correct = "true";
 
             btn.onclick = () => {
                 if (div.classList.contains("answered")) return;
                 div.classList.add("answered");
 
-                const buttons = div.querySelectorAll(".option");
-
-                buttons.forEach(b => {
-                    if (b.dataset.correct) {
-                        b.classList.add("correct");
-                    } else {
-                        b.classList.add("wrong");
-                    }
+                div.querySelectorAll(".option").forEach(b => {
+                    if (b.dataset.correct) b.classList.add("correct");
+                    else b.classList.add("wrong");
                 });
 
-                if (!btn.dataset.correct) {
-                    btn.classList.add("selected");
-                } else {
-                    buttons.forEach(b => {
-                        if (b !== btn) b.classList.add("grey");
-                    });
-                }
+                if (!btn.dataset.correct) btn.classList.add("selected");
             };
 
             div.appendChild(btn);
