@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <title>Past, Present & Future of AI</title>
 
-    <!-- Quiz CSS -->
-    <link rel="stylesheet" href="./quiz.css">
+    <!-- Quiz CSS (must be in same folder) -->
+    <link rel="stylesheet" href="quiz.css">
 
     <style>
         body {
@@ -44,71 +44,61 @@
         Artificial Intelligence began in the mid-20th century when scientists
         started exploring whether machines could think like humans.
         Early AI systems were rule-based, meaning they followed fixed instructions
-        written by programmers. One of the pioneers, Alan Turing, introduced
-        the Turing Test to check if a machine could behave intelligently.
-        Due to limited computing power and data, early AI systems were slow
-        and could perform only simple tasks.
+        written by programmers. Alan Turing introduced the Turing Test.
     </p>
 </div>
 
 <div class="section">
     <h2>Present of AI</h2>
     <p>
-        Today, Artificial Intelligence has become an important part of everyday life.
-        Modern AI systems use machine learning and deep learning to learn from large
-        amounts of data. AI is used in smartphones, voice assistants, medical diagnosis,
-        recommendation systems, self-driving cars, and online education.
-        With faster computers and advanced algorithms, AI can now recognize speech,
-        images, and patterns with high accuracy.
+        Today, AI uses machine learning and deep learning.
+        It is used in smartphones, voice assistants, medical diagnosis,
+        recommendation systems, and self-driving cars.
     </p>
 </div>
 
 <div class="section">
     <h2>Future of AI</h2>
     <p>
-        In the future, AI is expected to become more intelligent and independent.
-        It may help humans solve complex problems such as climate change,
-        disease detection, and space exploration. Future AI systems may work
-        closely with humans rather than replacing them.
-        However, the development of AI also raises ethical concerns about privacy,
-        job security, and responsible use of technology.
+        In the future, AI may help solve problems like climate change and disease detection,
+        but it also raises ethical concerns such as privacy and job security.
     </p>
 </div>
 
-<!-- Quiz -->
+<!-- QUIZ SECTION -->
 <button id="startQuiz">Start Quiz</button>
 <div id="quiz"></div>
 
 <p><a href="./index.html">⬅ Back to Main Menu</a></p>
 
-<!-- Quiz JS -->
-<script src="./quiz.js"></script>
+<!-- Quiz JS (must be in same folder) -->
+<script src="quiz.js"></script>
 
 <script>
 const quizData = [
   {
     q: "When did Artificial Intelligence begin?",
-    options: ["18th century","Mid-20th century","21st century","Ancient times"],
+    options: ["18th century", "Mid-20th century", "21st century", "Ancient times"],
     answer: 1
   },
   {
     q: "Who proposed the Turing Test?",
-    options: ["Albert Einstein","Alan Turing","Isaac Newton","Charles Darwin"],
+    options: ["Albert Einstein", "Alan Turing", "Isaac Newton", "Charles Darwin"],
     answer: 1
   },
   {
     q: "Early AI systems were mainly?",
-    options: ["Rule-based","Self-learning","Emotion-based","Voice-based"],
+    options: ["Rule-based", "Self-learning", "Emotion-based", "Voice-based"],
     answer: 0
   },
   {
     q: "Which technology is widely used in AI today?",
-    options: ["Deep learning","Steam engines","Typewriters","Telegrams"],
+    options: ["Deep learning", "Steam engines", "Typewriters", "Telegrams"],
     answer: 0
   },
   {
     q: "Future AI raises concerns about?",
-    options: ["Privacy","Job security","Ethics","All of these"],
+    options: ["Privacy", "Job security", "Ethics", "All of these"],
     answer: 3
   }
 ];
