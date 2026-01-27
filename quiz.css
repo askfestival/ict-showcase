@@ -68,13 +68,19 @@
         margin: 15px 0;
     }
 
-    #startQuiz,
-    .backBtn {
-        width: 100%;
-        font-size: 18px;
-        padding: 18px;
-        border-radius: 14px;
-    }
+  #startQuiz {
+    width: 100%;
+    font-size: 20px;
+    padding: 20px;
+    border-radius: 18px;
+}
+
+.backBtn {
+    width: 100%;
+    font-size: 18px;
+    padding: 18px;
+    border-radius: 18px;
+}
 
     .option {
         font-size: 17px;
