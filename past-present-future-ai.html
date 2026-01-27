@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Past, Present & Future of AI</title>
     <style>
+        <link rel="stylesheet" href="./quiz.css">
         body {
             font-family: Arial, sans-serif;
             background: #0f2027;
@@ -69,8 +70,48 @@
         job security, and responsible use of technology.
     </p>
 </div>
-
+<button id="startQuiz">Start Quiz</button>
+<div id="quiz"></div>
 <p><a href="./index.html">⬅ Back to Main Menu</a></p>
+<script src="./quiz.js"></script>
+<script>
+   // quizData here
+</script>
+    <script src="./quiz.js"></script>
 
+<script>
+const quizData = [
+  {
+    q: "When did Artificial Intelligence begin?",
+    options: ["18th century","Mid-20th century","21st century","Ancient times"],
+    answer: 1
+  },
+  {
+    q: "Who proposed the Turing Test?",
+    options: ["Albert Einstein","Alan Turing","Isaac Newton","Charles Darwin"],
+    answer: 1
+  },
+  {
+    q: "Early AI systems were mainly?",
+    options: ["Rule-based","Self-learning","Emotion-based","Voice-based"],
+    answer: 0
+  },
+  {
+    q: "Which technology is widely used in AI today?",
+    options: ["Deep learning","Steam engines","Typewriters","Telegrams"],
+    answer: 0
+  },
+  {
+    q: "Future AI raises concerns about?",
+    options: ["Privacy","Job security","Ethics","All of these"],
+    answer: 3
+  }
+];
+
+document.getElementById("startQuiz").onclick = () => {
+    loadQuiz(quizData);
+};
+</script>
 </body>
 </html>
+
