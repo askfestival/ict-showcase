@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>AR, VR & Holograms</title>
     <style>
+        <link rel="stylesheet" href="./quiz.css">
         body {
             font-family: Arial, sans-serif;
             background: #1c1c1c;
@@ -61,8 +62,44 @@
         They help display information in a more realistic and interactive way.
     </p>
 </div>
-
+<button id="startQuiz">Start Quiz</button>
+<div id="quiz"></div>
 <p><a href="./index.html">⬅ Back to Main Menu</a></p>
+<script src="./quiz.js"></script>
 
+<script>
+const quizData = [
+  {
+    q: "What does AR stand for?",
+    options: ["Artificial Reality","Augmented Reality","Advanced Reality","Actual Reality"],
+    answer: 1
+  },
+  {
+    q: "Which device is mainly used for VR?",
+    options: ["Mobile phone","VR headset","Television","Calculator"],
+    answer: 1
+  },
+  {
+    q: "Which technology creates a fully virtual environment?",
+    options: ["AR","VR","Holograms","AI"],
+    answer: 1
+  },
+  {
+    q: "Holograms appear as?",
+    options: ["Flat images","Floating 3D images","Text","Charts"],
+    answer: 1
+  },
+  {
+    q: "AR enhances which world?",
+    options: ["Virtual world","Real world","Dream world","Game world"],
+    answer: 1
+  }
+];
+
+document.getElementById("startQuiz").onclick = () => {
+    loadQuiz(quizData);
+};
+</script>
 </body>
 </html>
+
