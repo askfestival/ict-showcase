@@ -1,104 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Careers in AI</title>
+<meta charset="UTF-8">
+<title>Careers in AI</title>
 
-    <!-- Quiz CSS -->
-    <link rel="stylesheet" href="quiz.css">
+<link rel="stylesheet" href="./quiz.css">
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: #16222a;
-            color: white;
-            padding: 30px;
-        }
-
-        h1 {
-            text-align: center;
-        }
-
-        .job {
-            background: rgba(255,255,255,0.12);
-            padding: 25px;
-            margin: 25px 0;
-            border-radius: 15px;
-        }
-
-        a {
-            color: #66ff99;
-            text-decoration: none;
-            font-weight: bold;
-        }
-    </style>
+<style>
+body {
+    font-family: Arial;
+    background: #16222a;
+    color: white;
+    padding: 30px;
+}
+.job {
+    background: rgba(255,255,255,0.12);
+    padding: 25px;
+    margin: 25px 0;
+    border-radius: 15px;
+}
+a { color: #66ff99; }
+</style>
 </head>
 
 <body>
 
-<h1>Careers in Artificial Intelligence</h1>
+<h1>Careers in AI</h1>
 
 <div class="job">
-    <h2>AI Engineer</h2>
-    <p>
-        AI Engineers design and develop intelligent systems using algorithms
-        and machine learning models.
-    </p>
+<h2>AI Engineer</h2>
+<p>Builds intelligent systems.</p>
 </div>
 
 <div class="job">
-    <h2>Data Scientist</h2>
-    <p>
-        Data Scientists analyze large datasets to find patterns and train AI systems.
-    </p>
+<h2>Data Scientist</h2>
+<p>Analyzes data to train AI.</p>
 </div>
 
 <div class="job">
-    <h2>Robotics Engineer</h2>
-    <p>
-        Robotics Engineers build intelligent machines that can perform tasks automatically.
-    </p>
+<h2>Robotics Engineer</h2>
+<p>Builds intelligent machines.</p>
 </div>
 
 <button id="startQuiz">Start Quiz</button>
 <div id="quiz"></div>
 
-<p><a href="./index.html">⬅ Back to Main Menu</a></p>
+<p><a href="./index.html">⬅ Back</a></p>
 
-<script src="quiz.js"></script>
-
+<script src="./quiz.js"></script>
 <script>
 const quizData = [
-  {
-    q: "Who designs intelligent systems?",
-    options: ["Teacher","AI Engineer","Doctor","Farmer"],
-    answer: 1
-  },
-  {
-    q: "Who works with large amounts of data?",
-    options: ["Pilot","Data Scientist","Lawyer","Artist"],
-    answer: 1
-  },
-  {
-    q: "Which career builds intelligent machines?",
-    options: ["Architect","Robotics Engineer","Chef","Driver"],
-    answer: 1
-  },
-  {
-    q: "Which skill is important for AI careers?",
-    options: ["Cooking","Programming","Dancing","Painting"],
-    answer: 1
-  },
-  {
-    q: "AI careers are used in?",
-    options: ["Healthcare","Finance","Robotics","All of these"],
-    answer: 3
-  }
+ { q:"Who builds AI?", options:["Teacher","AI Engineer","Doctor","Farmer"], answer:1 },
+ { q:"Data expert?", options:["Pilot","Scientist","Chef","Driver"], answer:1 },
+ { q:"Robotics engineer builds?", options:["Cars","Machines","Paintings","Food"], answer:1 },
+ { q:"Important skill?", options:["Cooking","Programming","Singing","Drawing"], answer:1 },
+ { q:"AI used in?", options:["Health","Finance","Robotics","All"], answer:3 }
 ];
-
-document.getElementById("startQuiz").onclick = function () {
-    loadQuiz(quizData);
-};
+document.getElementById("startQuiz").onclick = () => loadQuiz(quizData);
 </script>
 
 </body>
