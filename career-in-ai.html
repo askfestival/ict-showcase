@@ -3,13 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <title>Careers in AI</title>
+
+    <!-- Quiz CSS -->
+    <link rel="stylesheet" href="quiz.css">
+
     <style>
-        <link rel="stylesheet" href="./quiz.css">
         body {
             font-family: Arial, sans-serif;
             background: #16222a;
             color: white;
             padding: 30px;
+        }
+
+        h1 {
+            text-align: center;
         }
 
         .job {
@@ -26,6 +33,7 @@
         }
     </style>
 </head>
+
 <body>
 
 <h1>Careers in Artificial Intelligence</h1>
@@ -33,75 +41,65 @@
 <div class="job">
     <h2>AI Engineer</h2>
     <p>
-        An AI Engineer designs, develops, and maintains intelligent systems
-        that can perform tasks requiring human intelligence.
-        They work with algorithms, machine learning models, and programming
-        languages to build AI applications used in industries such as healthcare,
-        finance, and robotics.
+        AI Engineers design and develop intelligent systems using algorithms
+        and machine learning models.
     </p>
 </div>
 
 <div class="job">
     <h2>Data Scientist</h2>
     <p>
-        A Data Scientist collects, analyzes, and interprets large amounts of data.
-        They help train AI systems by finding patterns and trends in data.
-        Data Scientists use statistics, programming, and analytical skills
-        to support decision-making and improve AI accuracy.
+        Data Scientists analyze large datasets to find patterns and train AI systems.
     </p>
 </div>
 
 <div class="job">
     <h2>Robotics Engineer</h2>
     <p>
-        A Robotics Engineer designs and builds intelligent machines that can
-        perform tasks automatically. These machines often use AI to sense,
-        think, and act. Robotics Engineers work in fields such as manufacturing,
-        healthcare, space exploration, and automation.
+        Robotics Engineers build intelligent machines that can perform tasks automatically.
     </p>
 </div>
+
 <button id="startQuiz">Start Quiz</button>
 <div id="quiz"></div>
+
 <p><a href="./index.html">⬅ Back to Main Menu</a></p>
-<script src="./quiz.js"></script>
-<script>
-   // quizData here
-</script>
-    <script src="./quiz.js"></script>
+
+<script src="quiz.js"></script>
 
 <script>
 const quizData = [
   {
-    q: "Who designs and builds intelligent systems?",
-    options: ["Web Designer","AI Engineer","Teacher","Accountant"],
+    q: "Who designs intelligent systems?",
+    options: ["Teacher","AI Engineer","Doctor","Farmer"],
     answer: 1
   },
   {
-    q: "Who works with large amounts of data to find patterns?",
-    options: ["Doctor","Data Scientist","Lawyer","Pilot"],
+    q: "Who works with large amounts of data?",
+    options: ["Pilot","Data Scientist","Lawyer","Artist"],
     answer: 1
   },
   {
-    q: "Which career focuses on intelligent machines?",
-    options: ["Civil Engineer","Robotics Engineer","Architect","Farmer"],
+    q: "Which career builds intelligent machines?",
+    options: ["Architect","Robotics Engineer","Chef","Driver"],
     answer: 1
   },
   {
     q: "Which skill is important for AI careers?",
-    options: ["Cooking","Programming","Painting","Dancing"],
+    options: ["Cooking","Programming","Dancing","Painting"],
     answer: 1
   },
   {
-    q: "AI careers are used in which fields?",
+    q: "AI careers are used in?",
     options: ["Healthcare","Finance","Robotics","All of these"],
     answer: 3
   }
 ];
 
-document.getElementById("startQuiz").onclick = () => {
+document.getElementById("startQuiz").onclick = function () {
     loadQuiz(quizData);
 };
 </script>
+
 </body>
 </html>
-
