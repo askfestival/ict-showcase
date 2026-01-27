@@ -1,4 +1,6 @@
-/* START QUIZ BUTTON */
+/* =========================
+   START QUIZ BUTTON
+========================= */
 #startQuiz {
     background: #00ff66;
     color: black;
@@ -11,7 +13,9 @@
     display: block;
 }
 
-/* GO BACK BUTTON (SUBTLE) */
+/* =========================
+   GO BACK BUTTON (SUBTLE)
+========================= */
 .backBtn {
     background: #2e2e2e;
     color: #cccccc;
@@ -25,7 +29,15 @@
     text-align: center;
     text-decoration: none;
 }
-/* Quiz questions */
+
+/* Hover effect (desktop only) */
+.backBtn:hover {
+    background: #3a3a3a;
+}
+
+/* =========================
+   QUIZ QUESTIONS
+========================= */
 .question {
     margin-bottom: 25px;
 }
@@ -43,12 +55,25 @@
     cursor: pointer;
 }
 
-.option.correct { background: #00cc66; }
-.option.wrong { background: #cc3333; }
-.option.grey { background: #666; }
-.option.selected { border: 3px solid red; }
+.option.correct {
+    background: #00cc66;
+}
 
-/* 🔹 MOBILE OPTIMIZATION */
+.option.wrong {
+    background: #cc3333;
+}
+
+.option.grey {
+    background: #666;
+}
+
+.option.selected {
+    border: 3px solid red;
+}
+
+/* =========================
+   MOBILE OPTIMIZATION
+========================= */
 @media (max-width: 600px) {
 
     body {
@@ -56,34 +81,37 @@
     }
 
     h1 {
-        font-size: 1.8em;
+        font-size: 1.9em;
     }
 
     h2 {
-        font-size: 1.3em;
+        font-size: 1.4em;
     }
 
-    .card, .job, .section {
+    .card,
+    .job,
+    .section {
         padding: 18px;
         margin: 15px 0;
     }
 
-  #startQuiz {
-    width: 100%;
-    font-size: 20px;
-    padding: 20px;
-    border-radius: 18px;
-}
+    /* Bigger buttons on mobile */
+    #startQuiz {
+        width: 100%;
+        font-size: 20px;
+        padding: 20px;
+        border-radius: 18px;
+    }
 
-.backBtn {
-    width: 100%;
-    font-size: 18px;
-    padding: 18px;
-    border-radius: 18px;
-}
+    .backBtn {
+        width: 100%;
+        font-size: 18px;
+        padding: 18px;
+        border-radius: 18px;
+    }
 
     .option {
-        font-size: 17px;
+        font-size: 18px;
         padding: 18px;
     }
 }
