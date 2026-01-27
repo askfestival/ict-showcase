@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Past, Present & Future of AI</title>
+
+    <!-- Quiz CSS -->
+    <link rel="stylesheet" href="./quiz.css">
+
     <style>
-        <link rel="stylesheet" href="./quiz.css">
         body {
             font-family: Arial, sans-serif;
             background: #0f2027;
@@ -30,6 +33,7 @@
         }
     </style>
 </head>
+
 <body>
 
 <h1>Past, Present & Future of Artificial Intelligence</h1>
@@ -70,14 +74,15 @@
         job security, and responsible use of technology.
     </p>
 </div>
+
+<!-- Quiz -->
 <button id="startQuiz">Start Quiz</button>
 <div id="quiz"></div>
+
 <p><a href="./index.html">⬅ Back to Main Menu</a></p>
+
+<!-- Quiz JS -->
 <script src="./quiz.js"></script>
-<script>
-   // quizData here
-</script>
-    <script src="./quiz.js"></script>
 
 <script>
 const quizData = [
@@ -108,10 +113,10 @@ const quizData = [
   }
 ];
 
-document.getElementById("startQuiz").onclick = () => {
+document.getElementById("startQuiz").onclick = function () {
     loadQuiz(quizData);
 };
 </script>
+
 </body>
 </html>
-
