@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Careers in AI</title>
     <style>
+        <link rel="stylesheet" href="./quiz.css">
         body {
             font-family: Arial, sans-serif;
             background: #16222a;
@@ -59,8 +60,48 @@
         healthcare, space exploration, and automation.
     </p>
 </div>
-
+<button id="startQuiz">Start Quiz</button>
+<div id="quiz"></div>
 <p><a href="./index.html">⬅ Back to Main Menu</a></p>
+<script src="./quiz.js"></script>
+<script>
+   // quizData here
+</script>
+    <script src="./quiz.js"></script>
 
+<script>
+const quizData = [
+  {
+    q: "Who designs and builds intelligent systems?",
+    options: ["Web Designer","AI Engineer","Teacher","Accountant"],
+    answer: 1
+  },
+  {
+    q: "Who works with large amounts of data to find patterns?",
+    options: ["Doctor","Data Scientist","Lawyer","Pilot"],
+    answer: 1
+  },
+  {
+    q: "Which career focuses on intelligent machines?",
+    options: ["Civil Engineer","Robotics Engineer","Architect","Farmer"],
+    answer: 1
+  },
+  {
+    q: "Which skill is important for AI careers?",
+    options: ["Cooking","Programming","Painting","Dancing"],
+    answer: 1
+  },
+  {
+    q: "AI careers are used in which fields?",
+    options: ["Healthcare","Finance","Robotics","All of these"],
+    answer: 3
+  }
+];
+
+document.getElementById("startQuiz").onclick = () => {
+    loadQuiz(quizData);
+};
+</script>
 </body>
 </html>
+
