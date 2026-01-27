@@ -21,6 +21,35 @@ body {
 }
 a { color: #00e6e6; }
 </style>
+    @media (max-width: 600px) {
+    body {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    h2 {
+        font-size: 1.3em;
+    }
+
+    .card, .job, .section {
+        padding: 18px;
+        margin: 15px 0;
+    }
+
+    #startQuiz {
+        width: 100%;
+        font-size: 16px;
+        padding: 14px;
+    }
+
+    .option {
+        font-size: 15px;
+        padding: 14px;
+    }
+}
 </head>
 
 <body>
@@ -61,3 +90,4 @@ document.getElementById("startQuiz").onclick = () => loadQuiz(quizData);
 
 </body>
 </html>
+
