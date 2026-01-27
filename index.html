@@ -1,85 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ASK-ICT-Room-5</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ASK-ICT-Room-5</title>
 
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: linear-gradient(to right, #141e30, #243b55);
-            color: white;
-        }
+<style>
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background: linear-gradient(to right, #141e30, #243b55);
+    color: white;
+}
 
-        header {
-            text-align: center;
-            padding: 50px 20px 30px 20px;
-        }
+header {
+    text-align: center;
+    padding: 50px 20px;
+}
 
-        header h1 {
-            font-size: 3em;
-            margin: 0;
-            color: #00ffcc;
-        }
+header h1 {
+    color: #00ffcc;
+}
 
-        header p {
-            font-size: 1.2em;
-            color: #b0f0f0;
-        }
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 40px;
+}
 
-        .container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
-            padding: 40px;
-        }
+.card {
+    background: rgba(255,255,255,0.1);
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    transition: 0.3s;
+}
 
-        .card {
-            background: rgba(255,255,255,0.1);
-            border-radius: 15px;
-            padding: 30px;
-            text-align: center;
-            transition: transform 0.3s, background 0.3s;
-            cursor: pointer;
-        }
+.card:hover {
+    transform: translateY(-10px);
+    background: rgba(0,255,204,0.2);
+}
 
-        .card:hover {
-            transform: translateY(-10px);
-            background: rgba(0,255,204,0.2);
-        }
+.card h2 {
+    color: #00ffcc;
+}
 
-        .card h2 {
-            color: #00ffcc;
-            margin-bottom: 15px;
-        }
-
-        .card p {
-            color: #d0f8f8;
-            font-size: 1em;
-        }
-
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: rgba(0,0,0,0.2);
-            margin-top: 50px;
-            font-size: 0.9em;
-            color: #a0f0f0;
-        }
-
-        @media (max-width: 600px) {
-            header h1 {
-                font-size: 2em;
-            }
-            .container {
-                padding: 20px;
-                gap: 20px;
-            }
-        }
-    </style>
+a {
+    text-decoration: none;
+}
+</style>
 </head>
 
 <body>
@@ -91,35 +61,28 @@
 
 <div class="container">
 
-    <!-- Past, Present & Future of AI -->
-    <a href="./past-present-future-ai.html" style="text-decoration:none;">
-        <div class="card">
-            <h2>Past, Present & Future of AI</h2>
-            <p>Explore the history, current developments, and future possibilities of Artificial Intelligence.</p>
-        </div>
-    </a>
+<a href="./past-present-future-ai.html">
+<div class="card">
+<h2>Past, Present & Future of AI</h2>
+<p>History, present use, and future of AI.</p>
+</div>
+</a>
 
-    <!-- AR, VR & Holograms -->
-    <a href="./ar-vr-holograms.html" style="text-decoration:none;">
-        <div class="card">
-            <h2>AR, VR & Holograms</h2>
-            <p>Discover immersive technologies like Augmented Reality, Virtual Reality, and Holograms.</p>
-        </div>
-    </a>
+<a href="./ar-vr-holograms.html">
+<div class="card">
+<h2>AR, VR & Holograms</h2>
+<p>Immersive digital technologies.</p>
+</div>
+</a>
 
-    <!-- Careers in AI -->
-    <a href="./career-in-ai.html" style="text-decoration:none;">
-        <div class="card">
-            <h2>Careers in AI</h2>
-            <p>Learn about exciting career paths in Artificial Intelligence and Robotics.</p>
-        </div>
-    </a>
+<a href="./career-in-ai.html">
+<div class="card">
+<h2>Careers in AI</h2>
+<p>Jobs and opportunities in AI.</p>
+</div>
+</a>
 
 </div>
-
-<footer>
-    2026 ASK-ICT-Room-5 | Asia English School
-</footer>
 
 </body>
 </html>
