@@ -10,6 +10,51 @@
     --grey-light: #D1D5DB;
     --grey-border: #9CA3AF;
 }
+/* =====================
+   HEADER (CENTERED)
+===================== */
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    padding: 60px 20px;
+
+    animation: slideDown 1s ease forwards;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+header p {
+    margin: 0;
+    color: var(--grey-light);
+}
+
+/* =====================
+   FOOTER (CENTERED)
+===================== */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    padding: 20px;
+
+    background: rgba(11, 28, 45, 0.85);
+    margin-top: 50px;
+
+    font-size: 0.9em;
+    color: var(--grey-light);
+
+    opacity: 0;
+    animation: fadeIn 1.2s ease forwards;
+    animation-delay: 0.8s;
+}
 
 /* =====================
    BODY
