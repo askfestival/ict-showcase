@@ -25,6 +25,18 @@ header {
     animation: slideDown 1s ease forwards;
 }
 
+#header{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+
+   text-align: center;
+   padding: 60px 20px;
+
+   animation: slideDown 1s ease forwards;
+}
+
 header h1 {
     margin-bottom: 10px;
 }
