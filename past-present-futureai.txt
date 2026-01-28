@@ -1,0 +1,19 @@
+🤖 Artificial Intelligence: Past, Present & Future
+⏳ Past of AI
+Definition:
+In the past, AI focused on basic rule-based systems that could perform simple tasks using pre-programmed instructions.
+Use:
+AI was used in calculators, early computer games, and simple expert systems like basic medical or chess programs.
+________________________________________
+🌍 Present of AI
+Definition:
+Today, AI uses machine learning and deep learning to analyze data, recognize patterns, and make decisions.
+Use:
+AI is used in voice assistants, facial recognition, recommendation systems, healthcare, finance, and smart devices.
+________________________________________
+🚀 Future of AI
+Definition:
+The future of AI aims to create systems that can think, learn, and adapt more like humans.
+Use:
+AI will power autonomous vehicles, personalized education, advanced medical treatments, smart cities, and human-AI collaboration.
+
