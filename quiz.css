@@ -30,7 +30,7 @@ header {
    CARD ANIMATIONS
 ===================== */
 .custom-card {
-    background: rgba(255,255,255,0.1);
+    background: #3A3A3A);
     border-radius: 18px;
     padding: 40px 25px;
     text-align: center;
@@ -53,7 +53,7 @@ header {
 /* Hover effect */
 .custom-card:hover {
     transform: translateY(-10px) scale(1.02);
-    background: rgba(30, 74, 117, 0.9);
+    background: #1E4A75;
     box-shadow: 0 15px 35px rgba(59,130,246,0.35);
 }
 
