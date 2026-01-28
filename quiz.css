@@ -10,6 +10,119 @@
     --grey-light: #D1D5DB;
     --grey-border: #9CA3AF;
 }
+/* =========================
+   GO BACK BUTTON (SUBTLE)
+========================= */
+.backBtn {
+    background: #2e2e2e;
+    color: #cccccc;
+    border: 1px solid #444;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 14px;
+    cursor: pointer;
+    margin: 10px 0 25px 0;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Hover effect (desktop only) */
+.backBtn:hover {
+    background: #3a3a3a;
+}
+
+/* =========================
+   QUIZ QUESTIONS
+========================= */
+.question {
+    margin-bottom: 25px;
+}
+
+#startQuiz {
+    background: #00ff66;
+    border: none;
+    padding: 14px 26px;
+    font-size: 18px;
+    border-radius: 14px;
+    cursor: pointer;
+    margin: 20px 0;
+    display: block;
+}
+
+.option {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 14px;
+    background: #333;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.option.correct {
+    background: #00cc66;
+}
+
+.option.wrong {
+    background: #cc3333;
+}
+
+.option.grey {
+    background: #666;
+}
+
+.option.selected {
+    border: 3px solid red;
+}
+
+/* =========================
+   MOBILE OPTIMIZATION
+========================= */
+@media (max-width: 600px) {
+
+    body {
+        padding: 15px !important;
+    }
+
+    h1 {
+        font-size: 1.9em;
+    }
+
+    h2 {
+        font-size: 1.4em;
+    }
+
+    .card,
+    .job,
+    .section {
+        padding: 18px;
+        margin: 15px 0;
+    }
+
+    /* Bigger buttons on mobile */
+    #startQuiz {
+        width: 100%;
+        font-size: 20px;
+        padding: 20px;
+        border-radius: 18px;
+    }
+
+    .backBtn {
+        width: 100%;
+        font-size: 18px;
+        padding: 18px;
+        border-radius: 18px;
+    }
+
+    .option {
+        font-size: 18px;
+        padding: 18px;
+    }
+
 /* =====================
    HEADER (CENTERED)
 ===================== */
