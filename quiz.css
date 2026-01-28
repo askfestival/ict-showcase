@@ -12,6 +12,86 @@
     margin: 20px 0;
     display: block;
 }
+/* =====================
+   GLOBAL PAGE ANIMATION
+===================== */
+body {
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* =====================
+   HEADER ANIMATION
+===================== */
+header {
+    animation: slideDown 1s ease forwards;
+}
+
+/* =====================
+   CARD ANIMATIONS
+===================== */
+.custom-card {
+    background: rgba(255,255,255,0.1);
+    border-radius: 18px;
+    padding: 40px 25px;
+    text-align: center;
+    height: 100%;
+
+    /* Animation */
+    opacity: 0;
+    transform: translateY(30px);
+    animation: slideUp 0.8s ease forwards;
+
+    /* Hover transition */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+/* Stagger effect */
+.custom-card:nth-child(1) { animation-delay: 0.2s; }
+.custom-card:nth-child(2) { animation-delay: 0.4s; }
+.custom-card:nth-child(3) { animation-delay: 0.6s; }
+
+/* Hover effect */
+.custom-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    background: rgba(30, 74, 117, 0.9);
+    box-shadow: 0 15px 35px rgba(59,130,246,0.35);
+}
+
+/* =====================
+   FOOTER FADE-IN
+===================== */
+footer {
+    opacity: 0;
+    animation: fadeIn 1.2s ease forwards;
+    animation-delay: 0.8s;
+}
+
+/* =====================
+   KEYFRAMES
+===================== */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@keyframes slideUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 
 /* =========================
    GO BACK BUTTON (SUBTLE)
