@@ -5,59 +5,61 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ASK-ICT-Room-5</title>
 
+<!-- Bootstrap 5 CDN -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
 <style>
 body {
     font-family: Arial, sans-serif;
     background: linear-gradient(to right, #141e30, #243b55);
     color: white;
-    margin: 0;
 }
 
+/* Header */
 header {
     text-align: center;
-    padding: 40px 20px;
+    padding: 60px 20px;
 }
 
-.container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 25px;
-    padding: 30px;
-}
-
-.card {
+/* Card Styling */
+.custom-card {
     background: rgba(255,255,255,0.1);
     border-radius: 18px;
-    padding: 30px;
+    padding: 40px 25px;
     text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
 }
 
-.card h2 {
+.custom-card h2 {
     color: #00ffcc;
+    font-size: 1.4rem;
 }
 
-a {
+.custom-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0,255,204,0.25);
+}
+
+/* Remove link underline */
+.card-link {
     text-decoration: none;
 }
 
-/* FOOTER */
+/* Footer */
 footer {
     text-align: center;
     padding: 20px;
     background: rgba(0,0,0,0.25);
-    margin-top: 40px;
+    margin-top: 50px;
     font-size: 0.9em;
     color: #a0f0f0;
 }
 
+/* Mobile tweaks */
 @media (max-width: 600px) {
     header h1 {
         font-size: 2em;
-    }
-
-    footer {
-        font-size: 0.85em;
-        padding: 18px;
     }
 }
 </style>
@@ -66,30 +68,38 @@ footer {
 <body>
 
 <header>
-    <h1>Ask-ICT-Room5</h1>
-    <p>Interactive ICT Showcase</p>
+    <h1 class="fw-bold">Ask-ICT-Room5</h1>
+    <p class="text-info">Interactive ICT Showcase</p>
 </header>
 
-<div class="container">
+<div class="container pb-5">
+    <div class="row g-4">
 
-<a href="./past-present-future-ai.html">
-<div class="card">
-<h2>Past, Present & Future of AI</h2>
-</div>
-</a>
+        <div class="col-md-4">
+            <a href="./past-present-future-ai.html" class="card-link">
+                <div class="custom-card shadow">
+                    <h2>Past, Present & Future of AI</h2>
+                </div>
+            </a>
+        </div>
 
-<a href="./ar-vr-holograms.html">
-<div class="card">
-<h2>AR, VR & Holograms</h2>
-</div>
-</a>
+        <div class="col-md-4">
+            <a href="./ar-vr-holograms.html" class="card-link">
+                <div class="custom-card shadow">
+                    <h2>AR, VR & Holograms</h2>
+                </div>
+            </a>
+        </div>
 
-<a href="./career-in-ai.html">
-<div class="card">
-<h2>Careers in AI</h2>
-</div>
-</a>
+        <div class="col-md-4">
+            <a href="./career-in-ai.html" class="card-link">
+                <div class="custom-card shadow">
+                    <h2>Careers in AI</h2>
+                </div>
+            </a>
+        </div>
 
+    </div>
 </div>
 
 <footer>
@@ -98,5 +108,3 @@ footer {
 
 </body>
 </html>
-
-
