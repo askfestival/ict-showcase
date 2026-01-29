@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +9,7 @@
 
 <style>
 body {
-    font-family: Arial;
+    font-family: Arial, sans-serif;
     background: #0f2027;
     color: white;
     padding: 30px;
@@ -21,6 +21,14 @@ body {
     margin: 25px 0;
     border-radius: 15px;
 }
+
+button {
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    border: none;
+}
 </style>
 </head>
 
@@ -29,31 +37,90 @@ body {
 <h1>Past, Present & Future of AI</h1>
 
 <div class="section">
-    <h2>🤖 Artificial Intelligence: Past, Present & Future</h2>
-    <p>⏳ Past of AI
-Definition:
-In the past, AI focused on basic rule-based systems that could perform simple tasks using pre-programmed instructions.
-Use:
-AI was used in calculators, early computer games, and simple expert systems like basic medical or chess programs.
-</p>
+    <h2>⏳ Past of AI</h2>
+    <p>
+        In the past, Artificial Intelligence focused on simple rule-based systems.
+        These systems followed predefined instructions to perform specific tasks.
+    </p>
+    <p>
+        AI was mainly used in calculators, early computer games, and expert systems
+        such as basic medical diagnosis tools and chess programs.
+    </p>
 </div>
-<div class="section">Present of AI</div>
-<div class="section">Future of AI</div>
+
+<div class="section">
+    <h2>⚙️ Present of AI</h2>
+    <p>
+        Today, AI uses machine learning and deep learning to analyze large amounts
+        of data and make decisions.
+    </p>
+    <p>
+        AI is widely used in voice assistants, recommendation systems, self-driving
+        cars, healthcare, education, and social media.
+    </p>
+</div>
+
+<div class="section">
+    <h2>🚀 Future of AI</h2>
+    <p>
+        In the future, AI is expected to become more intelligent and autonomous.
+        It may assist humans in advanced scientific research, space exploration,
+        and personalized education.
+    </p>
+    <p>
+        However, ethical concerns such as privacy, bias, and job displacement
+        will need careful management.
+    </p>
+</div>
 
 <button id="startQuiz">Start Quiz</button>
 <div id="quiz"></div>
 
+<br><br>
 <a href="./index.html" class="backBtn">⬅ Go Back</a>
 
-<script src="./quiz.js"></script>
 <script>
 const quizData = [
- { q:"When did AI begin?", options:["18th","Mid-20th","21st","Ancient"], answer:1 },
- { q:"Who proposed Turing Test?", options:["Newton","Turing","Einstein","Darwin"], answer:1 }
+    {
+        q: "When did AI begin?",
+        options: ["18th Century", "Mid-20th Century", "21st Century", "Ancient Times"],
+        answer: 1
+    },
+    {
+        q: "Who proposed the Turing Test?",
+        options: ["Newton", "Alan Turing", "Einstein", "Darwin"],
+        answer: 1
+    }
 ];
+
+function loadQuiz(data) {
+    const quizDiv = document.getElementById("quiz");
+    quizDiv.innerHTML = "";
+
+    data.forEach((item, index) => {
+        const question = document.createElement("p");
+        question.innerHTML = `<strong>${index + 1}. ${item.q}</strong>`;
+        quizDiv.appendChild(question);
+
+        item.options.forEach((opt, i) => {
+            const label = document.createElement("label");
+            label.style.display = "block";
+
+            const input = document.createElement("input");
+            input.type = "radio";
+            input.name = "q" + index;
+
+            label.appendChild(input);
+            label.append(" " + opt);
+            quizDiv.appendChild(label);
+        });
+
+        quizDiv.appendChild(document.createElement("br"));
+    });
+}
+
 document.getElementById("startQuiz").onclick = () => loadQuiz(quizData);
 </script>
 
 </body>
 </html>
-
