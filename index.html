@@ -97,7 +97,7 @@ footer {
 </header>
 
 <!-- Audio Button Section -->
-<div class="d-flex justify-content-center mt-0 mb-3" id="startQuiz" style="margin-top:-30px;">
+<div class="d-flex justify-content-center mt-0 mb-3" id="startQuiz" style="margin-top:-30px;" onclick="playSpeach()">
     <button id="playBtn" class="btn btn-light px-4 py-2 fw-semibold w-auto">
         ▶ Play Audio
     </button>
@@ -115,8 +115,35 @@ footer {
     button.addEventListener("click", () => {
       audio.play();
     });
-  </script>
-    
+function playSpeech() {
+  const text = `Information Technology, or IT, plays a very important role in our daily lives and in society.
+  It helps people communicate, learn new things, and solve problems more easily and quickly.
+
+  In education, IT has changed the way students learn.
+  With the help of computers, the internet, and online classes, students can study anytime and anywhere.
+  Educational apps, videos, and digital libraries make learning more interesting and interactive for students.
+
+  In healthcare, IT helps doctors and nurses take better care of patients.
+  Patient records are stored safely on computers, and doctors can give online consultations using video calls.
+  Technology also helps in medical research and saves lives during emergencies.
+
+  IT also helps society through online banking, digital payments, and government services.
+  People can pay bills, transfer money, and apply for documents without standing in long lines.
+  This saves time and makes life more convenient.
+
+  During natural disasters or emergencies, IT helps spread important information quickly.
+  Social media and news apps keep people informed and connected.
+
+  In conclusion, Information Technology makes society smarter, faster, and more connected.
+  If we use IT responsibly and wisely, it can help build a better and brighter future for everyone.`;
+
+  const speech = new SpeechSynthesisUtterance(text);
+  speech.rate = 0.9;
+  speech.pitch = 1;
+  speech.volume = 1;
+  window.speechSynthesis.speak(speech);
+}
+</script>
 
     
 <main class="flex-grow-1">
@@ -159,6 +186,7 @@ footer {
 
 </body>
 </html>
+
 
 
 
